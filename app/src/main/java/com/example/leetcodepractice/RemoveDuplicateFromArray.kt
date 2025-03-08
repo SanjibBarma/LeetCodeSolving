@@ -14,7 +14,7 @@ fun main(){
 
 
 
-//    using set
+//    using hashset
     val set: HashSet<Int> = HashSet()
     for (num in nums){
         set.add(num)
@@ -31,13 +31,13 @@ fun main(){
 
 
 
-//    using toSet
-    val sortedToSetToList = nums.toSet().toList()
+//    using toSet (similarly return a list or set like hashSet but not sorted)
+    val sortedToSetToList = nums.toSet()
     println("sortedToSetToList array size: ${sortedToSetToList.size} and set is $sortedToSetToList")
 
 
 
-//    using sorted
+//    using sorted make sure to sort the values
     val sortedToSetToSorted = nums.toSet().sorted()
     println("sortedToSetToSorted array size: ${sortedToSetToSorted.size} and set is $sortedToSetToSorted")
 
